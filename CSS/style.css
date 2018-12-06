@@ -1,0 +1,624 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  background-image: url("https://i.imgur.com/9WgJg0G.gif");
+  background-repeat: round;
+  background-color: black;
+  margin: 0;
+  /* cursor: url("https://png.icons8.com/small/30/000000/eraser.png"), pointer; */
+}
+
+/* .down:hover {
+  cursor: url("https://png.icons8.com/metro/50/000000/erase.png"), pointer;
+} */
+
+/* .animated-background {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+}
+
+@keyframes animatedBackground {
+  0% {
+    transform: scale(1.25) rotateX(20deg) translateX(-600px) translateY(-400px);
+  }
+
+  100% {
+    transform: scale(1.25) rotate(25deg) translateX(-600px) translateY(-2800px);
+  }
+}
+
+.pixel-grid {
+  min-width: 3080px;
+  position: absolute;
+  animation: animatedBackground 75s linear infinite;
+  animation-duration: 75s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-name: animatedBackground;
+}
+
+.image-grid-item-container {
+  width: 100%;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 0px 4px black;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table, td {
+  padding: 10px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  box-shadow: 20px 20px rgba(0,0,0,0.400) inset;
+}
+
+img {
+  margin-top: 10%;
+  width: 60%;
+  border: 2px groove white;
+}
+
+.pixel-menu {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #CCC5C2;
+  border-top-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 80px 80px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
+  width: 40%;
+}
+
+.top-header {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 1px solid black;
+}
+
+.left-graphic {
+  border-bottom: 3px solid black;
+}
+
+.right-graphic {
+}
+
+.outer-screen {
+  border: 2px solid black;
+  background-color: #8E8B8E;
+  border-top-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 80px 80px;
+  margin: 5% 5% 2% 5%;
+  text-align: right;
+}
+
+.outer-screen-top {
+  width: 100%;
+  display: flex;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.text-container {
+  width: 33.33%;
+  margin-right: 5%;
+}
+
+.right-container {
+  width: 16.67%;
+}
+
+.left-lines {
+  border-top: 2px solid red;
+  border-bottom: 2px solid blue;
+  height: 20%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 0%;
+}
+
+.outer-text {
+}
+
+.right-lines {
+  border-top: 2px solid red;
+  border-bottom: 2px solid blue;
+  height: 20%;
+  margin-top: 15%;
+}
+
+.game-screen {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+/* TODO: need to make this container display correctly */
+/* .battery-container {
+  display: flex;
+  flex-direction: column;
+  width: 16.67%;
+  border: 2px solid black;
+}
+
+.battery-light {
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  height: 5%;
+  width: 15%;
+  margin-left: 20%;
+  margin-top: 100%;
+}
+
+.battery-text {
+  margin-top: 10%;
+  font-size: 8px;
+} */
+
+.inner-screen {
+  width: 83.33%;
+  margin: 1% 13% 0% 13%;
+}
+
+.grid-frame {
+}
+
+.branding {
+  text-align: left;
+  color: blue;
+  padding-left: 5%;
+}
+
+.grid-color {
+  font-size: 100%;
+  text-align: right;
+  margin-right: 2%;
+}
+
+.controls {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.d-pad {
+  width: 41.67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.center {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.up {
+  border: 2px solid black;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 45%;
+  width: 20%;
+}
+
+.left {
+  border: 2px solid black;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  width: 20%;
+}
+
+.middle {
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 5px 5px 5px 5px;
+  height: 100%;
+  width: 20%;
+}
+
+.right {
+  border: 2px solid black;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100%;
+  width: 20%;
+}
+
+.down {
+  border: 2px solid black;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 45%;
+  width: 20%;
+}
+
+.color-buttons {
+  width: 58.33%;
+}
+
+.color-circles {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.circle:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 5px black;
+}
+
+.circle {
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 2%;
+}
+
+.color-rows {
+  display: flex;
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.color-row-2 {
+  display: flex;
+}
+
+.color-red6 {
+  background-color: #990000;
+}
+
+.color-red1 {
+  background-color: #EF6895;
+}
+
+.color-red2 {
+  background-color: #FBC1D5;
+}
+
+.color-red3 {
+  background-color: #F690B2;
+}
+
+.color-red4 {
+  background-color: #E7477D;
+}
+
+.color-red5 {
+  background-color: #DB2563;
+}
+
+.color-red7 {
+  background-color: #b30000;
+}
+
+.color-red8 {
+  background-color: #cc0000;
+}
+
+.color-red9 {
+  background-color: #e60000;
+}
+
+.color-red10 {
+  background-color: #ff0000;
+}
+
+.color-yellow1 {
+  background-color: #B5AF96;
+}
+
+.color-yellow2 {
+  background-color: #FFFDF3;
+}
+
+.color-yellow3 {
+  background-color: #DBD7C4;
+}
+
+.color-yellow4 {
+  background-color: #938C6F;
+}
+
+.color-yellow5 {
+  background-color: #6A6448;
+}
+
+.color-yellow6 {
+  background-color: #4C4700;
+}
+
+.color-yellow7 {
+  background-color: #756F0F;
+}
+
+.color-yellow8 {
+  background-color: #C8C25C;
+}
+
+.color-yellow9 {
+  background-color: #F4EF9A;
+}
+
+.color-yellow10 {
+  background-color: #9F992F;
+}
+
+.color-green1 {
+  background-color: #68B59E;
+}
+
+.color-green2 {
+  background-color: #CDEEE4;
+}
+
+.color-green3 {
+  background-color: #99D5C3;
+}
+
+.color-green4 {
+  background-color: #42997F;
+}
+
+.color-green5 {
+  background-color: #278166;
+}
+
+.color-green6 {
+  background-color: #002824;
+}
+
+.color-green7 {
+  background-color: #00423B;
+}
+
+.color-green8 {
+  background-color: #0D6D62;
+}
+
+.color-green9 {
+  background-color: #208278;
+}
+
+.color-green10 {
+  background-color: #005950;
+}
+
+.color-lightblue1 {
+  background-color: #55B3EA;
+}
+
+.color-lightblue2 {
+  background-color: #AFDEF9;
+}
+
+.color-lightblue3 {
+  background-color: #7DC6F2;
+}
+
+.color-lightblue4 {
+  background-color: #329FDF;
+}
+
+.color-lightblue5 {
+  background-color: #0D86CE;
+}
+
+.color-lightblue6 {
+  background-color: #04445C;
+}
+
+.color-lightblue7 {
+  background-color: #0D5875;
+}
+
+.color-lightblue8 {
+  background-color: #367E99;
+}
+
+.color-lightblue9 {
+  background-color: #5A9AB3;
+}
+
+.color-lightblue10 {
+  background-color: #1C7090;
+}
+
+.color-purple1 {
+  background-color: #705F86;
+}
+
+.color-purple2 {
+  background-color: #B8B1C2;
+}
+
+.color-purple3 {
+  background-color: #8F829F;
+}
+
+.color-purple4 {
+  background-color: #574471;
+}
+
+.color-purple5 {
+  background-color: #3F2B57;
+}
+
+.color-purple6 {
+  background-color: #252B2E;
+}
+
+.color-purple7 {
+  background-color: #42494E;
+}
+
+.color-purple8 {
+  background-color: #767C7F;
+}
+
+.color-purple9 {
+  background-color: #999C9E;
+}
+
+.color-purple10 {
+  background-color: #5B6266;
+}
+
+.color-brown1 {
+  background-color: #9E7985;
+}
+
+.color-brown2 {
+  background-color: #E4D3D9;
+}
+
+.color-brown3 {
+  background-color: #BFA2AB;
+}
+
+.color-brown4 {
+  background-color: #815865;
+}
+
+.color-brown5 {
+  background-color: #57343F;
+}
+
+.color-brown6 {
+  background-color: #B3724F;
+}
+
+.color-brown7 {
+  background-color: #DAA284;
+}
+
+.color-brown8 {
+  background-color: #FFE9DD;
+}
+
+.color-brown9 {
+  background-color: #FFF7F3;
+}
+
+.color-brown10 {
+  background-color: #FFD5BF;
+}
+
+.color-12 {
+  background-color: #FFD5BF;
+}
+
+.color-13 {
+  background-color: #FF9E8C;
+}
+
+.color-14 {
+  background-color: #FD9FA2;
+}
+
+.color-15 {
+  background-color: #C07A70;
+}
+
+.color-16 {
+  background-color: #A35044;
+}
+
+.color-17 {
+  background-color: #A35044;
+}
+
+.color-18 {
+  background-color: #A35044;
+}
+
+.color-19 {
+  background-color: #A35044;
+}
+
+.color-20 {
+  background-color: #A35044;
+  justify-content:
+}
+
+.Grid-height {
+  text-align: left;
+}
+
+.grid-width {
+  text-align: left;
+}
+
+.grid-data {
+  margin-left: 16px;
+}
+
+.submit-button {
+  padding-right: 70px;
+}
+
+input[type=text] {
+  border: 3px solid black;
+}
